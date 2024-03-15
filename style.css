@@ -1,0 +1,141 @@
+*{
+    /* Fondo con imagen */
+    background-image: url(Imagenes/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* Tipo de letra */
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 130%;
+}
+
+.logo{
+    padding-top: 1vw;
+    margin-left: 1vw;
+    width: 10%;
+}
+
+main{
+    /* Nos permite alinear */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5vw;
+    margin-left: 5vw;
+}
+
+.campo-texto, .mensaje{
+    border: none;
+    border-radius: 2vw;
+    color: black;
+    margin-top: 5vw;
+    margin-right: 5vw;
+    text-transform: lowercase;
+    padding: 2vw;
+    background: rgba(237, 235, 235, 0.914);
+    }
+
+::placeholder { color: black;}
+
+.campo-texto:focus,
+.mensaje:focus{
+        outline-color: rgba(237, 235, 235, 0.914);
+        background-color: rgba(237, 235, 235, 0.914);
+        border-radius: 2vw;
+}
+
+.info{
+    color: rgb(53, 32, 20);
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1vw;
+}
+
+.btnEncriptar{
+    background: rgba(230, 223, 188, 0.914);
+    border: none;
+    border-radius: 2vw;
+    color: black;
+    cursor: pointer;
+    height: 9vw;
+    width: 30vw;
+    margin: 1vw;
+}
+
+.btnDesencriptar{
+    background: rgba(154, 151, 138, 0.914);
+    border: none;
+    border-radius: 2vw;
+    color: black;
+    cursor: pointer;
+    height: 9vw;
+    width: 30vw;
+    margin: 1vw;
+}
+
+.copiar{
+    background: rgba(156, 151, 127, 0.914);
+    border: none;
+    border-radius: 2vw;
+    color: black;
+    cursor: pointer;
+    height: 9vw;
+    width: 30vw;
+    margin: 1vw;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: right;
+    font-size: 5px; /* Tamaño del texto en el rodapié */
+}
+
+
+/*Para dispositivos moviles*/
+
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 4vw;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    main {
+        margin-left: 2vw;
+    }
+
+    .campo-texto,
+    .mensaje {
+        margin-top: 3vw; 
+        margin-right: 2vw;
+        padding: 1.5vw;
+    }
+
+    .btnEncriptar,
+    .btnDesencriptar,
+    .copiar {
+        height: 12vw;
+        width: 80vw; 
+        margin: 2vw;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: right;
+        font-size: 5px; /* Tamaño del texto en el rodapié */
+    }
+}
